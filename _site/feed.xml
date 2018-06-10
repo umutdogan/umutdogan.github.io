@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Umut Dogan</title>
+    <description>Software Developer - Consultant</description>
+    <link>http://192.168.1.102:4000/</link>
+    <atom:link href="http://192.168.1.102:4000/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Sun, 10 Jun 2018 20:40:22 +0300</pubDate>
+    <lastBuildDate>Sun, 10 Jun 2018 20:40:22 +0300</lastBuildDate>
+    <generator>Jekyll v3.6.2</generator>
+    
+  </channel>
+</rss>
