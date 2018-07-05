@@ -7,7 +7,7 @@ Design pattern is a general repeatable solution to a commonly occurring problem 
 
 If you are new to programming, probably you won't hear or use "design pattern" concept a lot for the first couple months/years. But after some time, when you start to write more meaningful programs, you'll definitely need to use some tested and proven design patterns in your code. Design patterns can speed up the development process by providing tested, proven development paradigms. Effective software design requires considering issues that may not become visible until later in the implementation. Reusing design patterns helps to prevent subtle issues that can cause major problems and improves code readability for coders and architects familiar with the patterns.
 
-![Design Patterns Are Still Useful]({{site.baseurl}}//images/2018-07-05-software-design-patterns.jpg)
+![Design Patterns Are Still Useful]({{site.baseurl}}/images/2018-07-05-software-design-patterns.jpg)
 
 Design patterns gained popularity in computer science after the book Design Patterns: Elements of Reusable Object-Oriented Software was published in 1994 by the so-called "Gang of Four" (Gamma et al.), which is frequently abbreviated as "GoF". This important book describes various development techniques and pitfalls in addition to providing twenty-three object-oriented programming design patterns. The four authors were Erich Gamma, Richard Helm, Ralph Johnson and John Vlissides.
 
