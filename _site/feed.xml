@@ -3,11 +3,96 @@
   <channel>
     <title>Umut Dogan</title>
     <description>Software Developer - Consultant</description>
-    <link>http://192.168.1.102:4000/</link>
-    <atom:link href="http://192.168.1.102:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sun, 10 Jun 2018 20:40:22 +0300</pubDate>
-    <lastBuildDate>Sun, 10 Jun 2018 20:40:22 +0300</lastBuildDate>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Sat, 07 Jul 2018 16:44:02 +0300</pubDate>
+    <lastBuildDate>Sat, 07 Jul 2018 16:44:02 +0300</lastBuildDate>
     <generator>Jekyll v3.6.2</generator>
+    
+      <item>
+        <title>Software Design Patterns</title>
+        <description>&lt;p&gt;Design pattern is a general repeatable solution to a commonly occurring problem in software design. A design pattern isn’t a finished design that can be transformed directly into code. It is a description or template for how to solve a problem that can be used in many different situations.&lt;/p&gt;
+
+&lt;p&gt;If you are new to programming, probably you won’t hear or use “design pattern” concept a lot for the first couple months/years. But after some time, when you start to write more meaningful programs, you’ll definitely need to use some tested and proven design patterns in your code. Design patterns can speed up the development process by providing tested, proven development paradigms. Effective software design requires considering issues that may not become visible until later in the implementation. Reusing design patterns helps to prevent subtle issues that can cause major problems and improves code readability for coders and architects familiar with the patterns.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/2018-07-05-software-design-patterns.jpg&quot; alt=&quot;Design Patterns Are Still Useful&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Design patterns gained popularity in computer science after the book Design Patterns: Elements of Reusable Object-Oriented Software was published in 1994 by the so-called “Gang of Four” (Gamma et al.), which is frequently abbreviated as “GoF”. This important book describes various development techniques and pitfalls in addition to providing twenty-three object-oriented programming design patterns. The four authors were Erich Gamma, Richard Helm, Ralph Johnson and John Vlissides.&lt;/p&gt;
+
+&lt;p&gt;In the case of object-oriented programming, design patterns are generally aimed at solving the problems of object generation and interaction, rather than the larger scale problems of overall software architecture. They give generalised solutions in the form of templates that may be applied to real-world problems.&lt;/p&gt;
+
+&lt;p&gt;Design patterns were originally grouped into the categories: creational patterns, structural patterns, and behavioral patterns, and described using the concepts of delegation, aggregation, and consultation.&lt;/p&gt;
+
+&lt;h2 id=&quot;creational-design-patterns&quot;&gt;Creational design patterns&lt;/h2&gt;
+
+&lt;p&gt;These design patterns are all about class instantiation. This pattern can be further divided into class-creation patterns and object-creational patterns. While class-creation patterns use inheritance effectively in the instantiation process, object-creation patterns use delegation effectively to get the job done.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Abstract Factory&lt;/strong&gt;: Creates an instance of several families of classes&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Builder&lt;/strong&gt;: Separates object construction from its representation&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Factory Method&lt;/strong&gt;: Creates an instance of several derived classes&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Object Pool&lt;/strong&gt;: Avoid expensive acquisition and release of resources by recycling objects that are no longer in use&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Prototype&lt;/strong&gt;: A fully initialized instance to be copied or cloned&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Singleton&lt;/strong&gt;: A class of which only a single instance can exist&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;structural-design-patterns&quot;&gt;Structural design patterns&lt;/h2&gt;
+
+&lt;p&gt;These design patterns are all about Class and Object composition. Structural class-creation patterns use inheritance to compose interfaces. Structural object-patterns define ways to compose objects to obtain new functionality.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Adapter&lt;/strong&gt;: Match interfaces of different classes&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Bridge&lt;/strong&gt;: Separates an object’s interface from its implementation&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Composite&lt;/strong&gt;: A tree structure of simple and composite objects&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Decorator&lt;/strong&gt;: Add responsibilities to objects dynamically&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Facade&lt;/strong&gt;: A single class that represents an entire subsystem&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Flyweight&lt;/strong&gt;: A fine-grained instance used for efficient sharing&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Private Class Data&lt;/strong&gt;: Restricts accessor/mutator access&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Proxy&lt;/strong&gt;: An object representing another object&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;behavioral-design-patterns&quot;&gt;Behavioral design patterns&lt;/h2&gt;
+
+&lt;p&gt;These design patterns are all about Class’s objects communication. Behavioral patterns are those patterns that are most specifically concerned with communication between objects.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Chain of responsibility&lt;/strong&gt;: A way of passing a request between a chain of objects&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Command&lt;/strong&gt;: Encapsulate a command request as an object&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Interpreter&lt;/strong&gt;: A way to include language elements in a program&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Iterator&lt;/strong&gt;: Sequentially access the elements of a collection&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Mediator&lt;/strong&gt;: Defines simplified communication between classes&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Memento&lt;/strong&gt;: Capture and restore an object’s internal state&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Null Object&lt;/strong&gt;: Designed to act as a default value of an object&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Observer&lt;/strong&gt;: A way of notifying change to a number of classes&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;State&lt;/strong&gt;: Alter an object’s behavior when its state changes&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Strategy&lt;/strong&gt;: Encapsulates an algorithm inside a class&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Template method&lt;/strong&gt;: Defer the exact steps of an algorithm to a subclass&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Visitor&lt;/strong&gt;: Defines a new operation to a class without change&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h6 id=&quot;references&quot;&gt;References:&lt;/h6&gt;
+&lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;https://sourcemaking.com/design_patterns&quot;&gt;https://sourcemaking.com/design_patterns&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.blackwasp.co.uk/gofpatterns.aspx&quot;&gt;http://www.blackwasp.co.uk/gofpatterns.aspx&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Software_design_pattern&quot;&gt;https://en.wikipedia.org/wiki/Software_design_pattern&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h6 id=&quot;books&quot;&gt;Books:&lt;/h6&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.amazon.com/Design-Patterns-Elements-Reusable-Object-Oriented/dp/0201633612&quot;&gt;Design Patterns: Elements of Reusable Object-Oriented Software&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.amazon.com/Head-First-Design-Patterns-Brain-Friendly/dp/0596007124&quot;&gt;Head First Design Patterns: A Brain-Friendly Guide&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Fri, 06 Jul 2018 01:00:23 +0300</pubDate>
+        <link>http://localhost:4000/2018/software-design-patterns/</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/software-design-patterns/</guid>
+        
+        <category>design patterns</category>
+        
+        
+        <category>design patterns</category>
+        
+      </item>
     
   </channel>
 </rss>

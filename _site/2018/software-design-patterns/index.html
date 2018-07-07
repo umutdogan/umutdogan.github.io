@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+
+  <title>Software Design Patterns</title>
+  <meta name="description" content="Design pattern is a general repeatable solution to a commonly occurring problem in software design. A design pattern isn’t a finished design that can be transformed directly into code. It is a description or template for how to solve a problem that can be used in many different situations.
+
+">
+  <meta name="author" content="Umut Dogan">
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Software Design Patterns">
+  <meta name="twitter:description" content="Design pattern is a general repeatable solution to a commonly occurring problem in software design. A design pattern isn’t a finished design that can be transformed directly into code. It is a description or template for how to solve a problem that can be used in many different situations.
+
+">
+  
+  <meta name="twitter:creator" content="umutdogan">
+  
+  <meta name="twitter:image" content="/images/favicons/favicon-194x194.png" />
+
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Software Design Patterns">
+  <meta property="og:description" content="Design pattern is a general repeatable solution to a commonly occurring problem in software design. A design pattern isn’t a finished design that can be transformed directly into code. It is a description or template for how to solve a problem that can be used in many different situations.
+
+">
+  <meta property="og:image" content="/images/favicons/favicon-194x194.png" />
+
+  <link rel="apple-touch-icon" sizes="57x57" href="/images/favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/images/favicons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/images/favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/images/favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/images/favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/images/favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/images/favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/images/favicons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" href="/images/favicons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/images/favicons/favicon-194x194.png" sizes="194x194">
+  <link rel="icon" type="image/png" href="/images/favicons/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="/images/favicons/android-chrome-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="/images/favicons/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="/images/favicons/manifest.json">
+  <link rel="shortcut icon" href="/images/favicons/favicon.ico">
+  <meta name="msapplication-TileColor" content="#ffc40d">
+  <meta name="msapplication-TileImage" content="/images/favicons/mstile-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  
+  <link rel="stylesheet" href="/css/main.css?1530971042106282356">
+  <link rel="canonical" href="http://localhost:4000/2018/software-design-patterns/">
+  <link rel="alternate" type="application/rss+xml" title="Umut Dogan" href="/feed.xml">
+</head>
+
+
+  <body>
+    <span class="mobile btn-mobile-menu">
+  <i class="icon icon-list btn-mobile-menu__icon"></i>
+  <i class="icon icon-x-circle btn-mobile-close__icon hidden"></i>
+</span>
+
+<header class="panel-cover" style="background-image: url(/images/cover.jpg)">
+  <div class="panel-main">
+
+    <div class="panel-main__inner panel-inverted">
+    <div class="panel-main__content">
+        <a href="/">
+          <img src="/images/umut_profile.png" class="user-image" alt="My Profile Photo">
+          <h1 class="panel-cover__title panel-title">Umut Dogan</h1>
+        </a>
+        <hr class="panel-cover__divider">
+        <p class="panel-cover__description">Software Developer - Consultant</p>
+        <hr class="panel-cover__divider panel-cover__divider--secondary">
+
+        <div class="navigation-wrapper">
+
+          <nav class="cover-navigation cover-navigation--primary">
+            <ul class="navigation">
+              <li class="navigation__item"><a href="/#blog" title="link to Umut Dogan blog" class="blog-button">Blog</a></li>
+            </ul>
+          </nav>
+
+          <nav class="cover-navigation navigation--social">
+            <ul class="navigation">
+
+            
+              <!-- Twitter -->
+              <li class="navigation__item">
+                <a href="http://twitter.com/umutdogan" title="@umutdogan on Twitter" target="_blank">
+                  <i class="icon icon-social-twitter"></i>
+                  <span class="label">Twitter</span>
+                </a>
+              </li>
+            
+
+            
+
+            
+              <!-- LinkedIn -->
+              <li class="navigation__item">
+                <a href="https://www.linkedin.com/in/umutdogan" title="umutdogan on LinkedIn" target="_blank">
+                  <i class="icon icon-social-linkedin"></i>
+                  <span class="label">LinkedIn</span>
+                </a>
+              </li>
+            
+
+            
+              <!-- GitHub -->
+              <li class="navigation__item">
+                <a href="https://www.github.com/umutdogan" title="umutdogan on GitHub" target="_blank">
+                  <i class="icon icon-social-github"></i>
+                  <span class="label">GitHub</span>
+                </a>
+              </li>
+            
+
+            
+              <!-- Email -->
+              <li class="navigation__item">
+                <a href="mailto:admin@umutdogan.com" title="Email admin@umutdogan.com" target="_blank">
+                  <i class="icon icon-mail"></i>
+                  <span class="label">Email</span>
+                </a>
+              </li>
+            
+
+            <!-- RSS -->
+            <li class="navigation__item">
+              <a href="/feed.xml" title="Subscribe" target="_blank">
+                <i class="icon icon-rss"></i>
+                <span class="label">RSS</span>
+              </a>
+            </li>
+
+            </ul>
+          </nav>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="panel-cover--overlay"></div>
+  </div>
+</header>
+
+
+    <div class="content-wrapper">
+      <div class="content-wrapper__inner">
+        <article class="post-container post-container--single">
+  <header class="post-header">
+    <div class="post-meta">
+      <time datetime="2018-07-06 01:00" class="post-meta__date date">6 Jul 2018</time>
+      
+      &#8226; <span class="post-meta__tags">on <a href="/tags/#design patterns">design patterns</a> </span>
+      
+    </div>
+    <h1 class="post-title">Software Design Patterns</h1>
+  </header>
+
+  <section class="post">
+    <p>Design pattern is a general repeatable solution to a commonly occurring problem in software design. A design pattern isn’t a finished design that can be transformed directly into code. It is a description or template for how to solve a problem that can be used in many different situations.</p>
+
+<p>If you are new to programming, probably you won’t hear or use “design pattern” concept a lot for the first couple months/years. But after some time, when you start to write more meaningful programs, you’ll definitely need to use some tested and proven design patterns in your code. Design patterns can speed up the development process by providing tested, proven development paradigms. Effective software design requires considering issues that may not become visible until later in the implementation. Reusing design patterns helps to prevent subtle issues that can cause major problems and improves code readability for coders and architects familiar with the patterns.</p>
+
+<p><img src="/images/2018-07-05-software-design-patterns.jpg" alt="Design Patterns Are Still Useful" /></p>
+
+<p>Design patterns gained popularity in computer science after the book Design Patterns: Elements of Reusable Object-Oriented Software was published in 1994 by the so-called “Gang of Four” (Gamma et al.), which is frequently abbreviated as “GoF”. This important book describes various development techniques and pitfalls in addition to providing twenty-three object-oriented programming design patterns. The four authors were Erich Gamma, Richard Helm, Ralph Johnson and John Vlissides.</p>
+
+<p>In the case of object-oriented programming, design patterns are generally aimed at solving the problems of object generation and interaction, rather than the larger scale problems of overall software architecture. They give generalised solutions in the form of templates that may be applied to real-world problems.</p>
+
+<p>Design patterns were originally grouped into the categories: creational patterns, structural patterns, and behavioral patterns, and described using the concepts of delegation, aggregation, and consultation.</p>
+
+<h2 id="creational-design-patterns">Creational design patterns</h2>
+
+<p>These design patterns are all about class instantiation. This pattern can be further divided into class-creation patterns and object-creational patterns. While class-creation patterns use inheritance effectively in the instantiation process, object-creation patterns use delegation effectively to get the job done.</p>
+
+<ul>
+  <li><strong>Abstract Factory</strong>: Creates an instance of several families of classes</li>
+  <li><strong>Builder</strong>: Separates object construction from its representation</li>
+  <li><strong>Factory Method</strong>: Creates an instance of several derived classes</li>
+  <li><strong>Object Pool</strong>: Avoid expensive acquisition and release of resources by recycling objects that are no longer in use</li>
+  <li><strong>Prototype</strong>: A fully initialized instance to be copied or cloned</li>
+  <li><strong>Singleton</strong>: A class of which only a single instance can exist</li>
+</ul>
+
+<h2 id="structural-design-patterns">Structural design patterns</h2>
+
+<p>These design patterns are all about Class and Object composition. Structural class-creation patterns use inheritance to compose interfaces. Structural object-patterns define ways to compose objects to obtain new functionality.</p>
+
+<ul>
+  <li><strong>Adapter</strong>: Match interfaces of different classes</li>
+  <li><strong>Bridge</strong>: Separates an object’s interface from its implementation</li>
+  <li><strong>Composite</strong>: A tree structure of simple and composite objects</li>
+  <li><strong>Decorator</strong>: Add responsibilities to objects dynamically</li>
+  <li><strong>Facade</strong>: A single class that represents an entire subsystem</li>
+  <li><strong>Flyweight</strong>: A fine-grained instance used for efficient sharing</li>
+  <li><strong>Private Class Data</strong>: Restricts accessor/mutator access</li>
+  <li><strong>Proxy</strong>: An object representing another object</li>
+</ul>
+
+<h2 id="behavioral-design-patterns">Behavioral design patterns</h2>
+
+<p>These design patterns are all about Class’s objects communication. Behavioral patterns are those patterns that are most specifically concerned with communication between objects.</p>
+
+<ul>
+  <li><strong>Chain of responsibility</strong>: A way of passing a request between a chain of objects</li>
+  <li><strong>Command</strong>: Encapsulate a command request as an object</li>
+  <li><strong>Interpreter</strong>: A way to include language elements in a program</li>
+  <li><strong>Iterator</strong>: Sequentially access the elements of a collection</li>
+  <li><strong>Mediator</strong>: Defines simplified communication between classes</li>
+  <li><strong>Memento</strong>: Capture and restore an object’s internal state</li>
+  <li><strong>Null Object</strong>: Designed to act as a default value of an object</li>
+  <li><strong>Observer</strong>: A way of notifying change to a number of classes</li>
+  <li><strong>State</strong>: Alter an object’s behavior when its state changes</li>
+  <li><strong>Strategy</strong>: Encapsulates an algorithm inside a class</li>
+  <li><strong>Template method</strong>: Defer the exact steps of an algorithm to a subclass</li>
+  <li><strong>Visitor</strong>: Defines a new operation to a class without change</li>
+</ul>
+
+<h6 id="references">References:</h6>
+<ol>
+  <li><a href="https://sourcemaking.com/design_patterns">https://sourcemaking.com/design_patterns</a></li>
+  <li><a href="http://www.blackwasp.co.uk/gofpatterns.aspx">http://www.blackwasp.co.uk/gofpatterns.aspx</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Software_design_pattern">https://en.wikipedia.org/wiki/Software_design_pattern</a></li>
+</ol>
+
+<h6 id="books">Books:</h6>
+<ul>
+  <li><a href="https://www.amazon.com/Design-Patterns-Elements-Reusable-Object-Oriented/dp/0201633612">Design Patterns: Elements of Reusable Object-Oriented Software</a></li>
+  <li><a href="https://www.amazon.com/Head-First-Design-Patterns-Brain-Friendly/dp/0596007124">Head First Design Patterns: A Brain-Friendly Guide</a></li>
+</ul>
+
+  </section>
+  
+</article>
+
+
+
+      </div>
+
+      <footer class="footer">
+  <span class="footer__copyright">&copy; 2018 Umut Dogan. All rights reserved.</span>
+</footer>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="/js/main.js?1530971042106282356"></script>
+
+
+    </div>
+  </body>
+</html>
